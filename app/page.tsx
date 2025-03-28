@@ -1,7 +1,25 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const data = await response.json();
+      console.log('Response:', data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -45,6 +63,12 @@ export default function Home() {
             Read our docs
           </a>
         </div>
+
+        <form onSubmit={handleSubmit}>
+          <button type="submit" className={styles.primary}>
+            Отправить Email
+          </button>
+        </form>
       </main>
       <footer className={styles.footer}>
         <a

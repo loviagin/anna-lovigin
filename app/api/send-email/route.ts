@@ -4,19 +4,15 @@ import Email from '@/app/components/email/email';
 import { render } from '@react-email/render';
 import * as React from 'react';
 
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 export async function POST() {
     const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
     const html = await render(React.createElement(Email, { url: 'https://lovigin.com' }));
 
     try {
-        console.log("Sending email with values:", {
-            from: 'noreply@irisprophoto.me',
-            to: 'ilia.loviagin@gmail.com',
-            subject: 'New certificate purchase',
-            html,
-        });
-
         const data = await resend.emails.send({
             from: 'corp@lovigin.com',
             to: 'ilia.loviagin@gmail.com',

@@ -20,7 +20,7 @@ const featuredWorks: Artwork[] = [
     imageUrl: "/artworks/19.webp",
     year: "2024",
     technique: "Холст, масло",
-    price: "38 000 ₽",
+    price: "По запросу",
     size: "25x20 см"
   },
   {
@@ -29,7 +29,7 @@ const featuredWorks: Artwork[] = [
     imageUrl: "/artworks/20.webp",
     year: "2024",
     technique: "Холст, масло",
-    price: "42 000 ₽",
+    price: "По запросу",
     size: "30x30 см"
   },
   {
@@ -38,7 +38,7 @@ const featuredWorks: Artwork[] = [
     imageUrl: "/artworks/21.webp",
     year: "2023",
     technique: "Холст на подрамнике, масло",
-    price: "45 000 ₽",
+    price: "По запросу",
     size: "40x30 см"
   }
 ];

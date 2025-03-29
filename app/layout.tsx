@@ -12,6 +12,10 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Анна Ловягина – Профессиональный художник",
   description: "Профессиональный художник, создающий искусство, которое трогает душу. Ее работы отличаются глубоким эмоциональным содержанием и уникальным художественным видением.",
+  authors: [{ name: "LOVIGIN LTD", url: "https://lovigin.com" }],
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({

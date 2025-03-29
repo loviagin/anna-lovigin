@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './Hero.module.css';
+import Link from 'next/link';
 
 interface Artwork {
   id: number;
@@ -178,11 +179,11 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.heroContent}>
         <h1 className={styles.title}>Анна Ловягина</h1>
-        <p className={styles.slogan}>Создаю искусство, которое трогает душу</p>
-        {/* <div className={styles.buttons}>
+        <p className={styles.slogan}>Профессиональный художник</p>
+        <div className={styles.buttons}>
           <button className={styles.primaryButton}>Смотреть работы</button>
-          <button className={styles.secondaryButton}>Узнать больше</button>
-        </div> */}
+          <Link href={'/#more'} className={styles.secondaryButton}>Узнать больше</Link>
+        </div>
       </div>
       
       <div 

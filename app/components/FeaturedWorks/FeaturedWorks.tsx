@@ -47,7 +47,7 @@ export default function FeaturedWorks() {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
-    <section className={styles.featuredWorks}>
+    <section className={styles.featuredWorks} id='featured'>
       <div className={styles.container}>
         <h2 className={styles.title}>Арты в наличии</h2>
         <div className={styles.grid}>

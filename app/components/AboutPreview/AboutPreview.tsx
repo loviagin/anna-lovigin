@@ -2,7 +2,7 @@ import styles from './AboutPreview.module.css';
 
 export default function AboutPreview() {
   return (
-    <section className={styles.aboutPreview}>
+    <section className={styles.aboutPreview} id='about'>
       <div className={styles.container}>
         <div className={styles.content}>
           <h2 className={styles.title}>О художнике</h2>

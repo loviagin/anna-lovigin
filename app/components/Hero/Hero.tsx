@@ -181,7 +181,7 @@ export default function Hero() {
         <h1 className={styles.title}>Анна Ловягина</h1>
         <p className={styles.slogan}>Профессиональный художник</p>
         <div className={styles.buttons}>
-          <button className={styles.primaryButton}>Смотреть работы</button>
+          <Link href={'/#'} className={styles.primaryButton}>Смотреть работы</Link>
           <Link href={'/#more'} className={styles.secondaryButton}>Узнать больше</Link>
         </div>
       </div>

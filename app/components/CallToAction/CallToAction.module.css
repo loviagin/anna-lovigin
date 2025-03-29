@@ -1,5 +1,5 @@
 .callToAction {
-  padding: 100px 0;
+  padding: 6rem 2rem;
   background: linear-gradient(135deg, #d1e3ff 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
@@ -159,6 +159,10 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
 }
 
 .socialLink::before {
@@ -181,6 +185,20 @@
   background: linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
 }
 
+.icon {
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-top: -1px;
+}
+
+.socialLink:hover .icon {
+  transform: scale(1.1);
+}
+
 .vk {
   background-color: #0077FF;
 }
@@ -193,47 +211,142 @@
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .container {
     grid-template-columns: 1fr;
     gap: 40px;
+    padding: 0 40px;
   }
 
   .quote {
     transform: none;
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   .social {
     transform: none;
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .quoteText {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 18px;
   }
 
   .socialLinks {
     justify-content: center;
+    gap: 20px;
   }
 
-  .quoteText {
-    font-size: 20px;
+  .socialLink {
+    padding: 12px 24px;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .callToAction {
+    padding: 4rem 1rem;
   }
 
-  .title {
-    font-size: 28px;
+  .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 15px;
   }
 
-  .description {
-    font-size: 16px;
+  .quote {
+    transform: none;
+    text-align: center;
+    padding: 25px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .social {
+    transform: none;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .socialLinks {
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
 
+  .quoteText {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .quoteAuthor {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
   .socialLink {
-    width: 220px;
+    width: 100%;
+    max-width: 280px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  .icon {
+    font-size: 1.1em;
+  }
+
+  .animatedCircle:nth-child(1) {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 5%;
+  }
+
+  .animatedCircle:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    right: 5%;
+  }
+
+  .animatedCircle:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 40%;
+  }
+
+  .callToAction::after {
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    right: -100px;
   }
 } 

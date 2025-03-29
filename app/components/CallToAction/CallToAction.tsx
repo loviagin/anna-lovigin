@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './CallToAction.module.css';
+import { FaVk, FaTelegram, FaInstagram } from 'react-icons/fa';
 
 export default function CallToAction() {
   return (
@@ -29,6 +30,7 @@ export default function CallToAction() {
               rel="noopener noreferrer"
               className={`${styles.socialLink} ${styles.vk}`}
             >
+              <FaVk className={styles.icon} />
               ВКонтакте
             </a>
             <a 
@@ -37,14 +39,16 @@ export default function CallToAction() {
               rel="noopener noreferrer"
               className={`${styles.socialLink} ${styles.telegram}`}
             >
+              <FaTelegram className={styles.icon} />
               Telegram
             </a>
             <a 
-              href="https://instagram.com/anna_art" 
+              href="https://www.instagram.com/annaloviagina/" 
               target="_blank" 
               rel="noopener noreferrer"
               className={`${styles.socialLink} ${styles.instagram}`}
             >
+              <FaInstagram className={styles.icon} />
               Instagram
             </a>
           </div>

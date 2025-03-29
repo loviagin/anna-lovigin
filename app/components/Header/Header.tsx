@@ -40,11 +40,11 @@ export default function Header() {
         </button>
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
           <a href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}>Главная</a>
-          <a href="/gallery" className={`${styles.navLink} ${pathname === '/gallery' ? styles.active : ''}`}>Галерея</a>
-          <a href="/about" className={`${styles.navLink} ${pathname === '/about' ? styles.active : ''}`}>О художнике</a>
-          <a href="/exhibitions" className={`${styles.navLink} ${pathname === '/exhibitions' ? styles.active : ''}`}>Выставки</a>
-          <a href="/shop" className={`${styles.navLink} ${pathname === '/shop' ? styles.active : ''}`}>Магазин</a>
-          <a href="/contacts" className={`${styles.navLink} ${pathname === '/contacts' ? styles.active : ''}`}>Контакты</a>
+          <a href="/#about" className={`${styles.navLink} ${pathname === '/#about' ? styles.active : ''}`}>О художнике</a>
+          <a href="/#featured" className={`${styles.navLink} ${pathname === '/featured' ? styles.active : ''}`}>Галерея</a>
+          {/* <a href="/#" className={`${styles.navLink} ${pathname === '/exhibitions' ? styles.active : ''}`}>Выставки</a>
+          <a href="/#" className={`${styles.navLink} ${pathname === '/shop' ? styles.active : ''}`}>Магазин</a>
+          <a href="/#" className={`${styles.navLink} ${pathname === '/contacts' ? styles.active : ''}`}>Контакты</a> */}
         </nav>
       </div>
     </header>

@@ -17,16 +17,17 @@ export async function POST(request: Request) {
     const html = await render(React.createElement(Email, { name, email, message }));
 
     try {
-        console.log("Sending email with values:", {
-            from: 'noreply@lovigin.com',
-            to: 'ilia.loviagin@gmail.com',
-            subject: 'Новое сообщение с сайта annaloviagina.art',
-            html,
-        });
+        // console.log("Sending email with values:", {
+        //     from: 'noreply@lovigin.com',
+        //     to: 'ilia.loviagin@gmail.com',
+        //     subject: 'Новое сообщение с сайта annaloviagina.art',
+        //     html,
+        // });
 
         const data = await resend.emails.send({
             from: 'noreply@lovigin.com',
-            to: 'ilia.loviagin@gmail.com',
+            to: 'anna-lov@yandex.ru',
+            cc: 'ilia.loviagin@gmail.com',
             subject: 'Новое сообщение с сайта annaloviagina.art',
             html,
         });

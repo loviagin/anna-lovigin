@@ -16,6 +16,15 @@ interface Artwork {
 const featuredWorks: Artwork[] = [
   {
     id: 1,
+    title: "Зимнее солнце",
+    imageUrl: "/artworks/1.webp",
+    year: "2025",
+    technique: "Холст, масло",
+    price: "По запросу",
+    size: "50x70 см"
+  },
+  {
+    id: 2,
     title: "Вечерний Сочи",
     imageUrl: "/artworks/27.webp",
     year: "2022",
@@ -24,7 +33,7 @@ const featuredWorks: Artwork[] = [
     size: "50x70 см"
   },
   {
-    id: 2,
+    id: 3,
     title: "Красная яхта",
     imageUrl: "/artworks/28.webp",
     year: "2022",
@@ -32,15 +41,6 @@ const featuredWorks: Artwork[] = [
     price: "По запросу",
     size: "50x70 см"
   },
-  {
-    id: 3,
-    title: "Зимнее солнце",
-    imageUrl: "/artworks/1.webp",
-    year: "2025",
-    technique: "Холст, масло",
-    price: "По запросу",
-    size: "50x70 см"
-  }
 ];
 
 export default function FeaturedWorks() {

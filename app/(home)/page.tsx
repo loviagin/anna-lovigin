@@ -2,6 +2,8 @@ import Hero from '../components/Hero/Hero';
 import AboutPreview from '../components/AboutPreview/AboutPreview';
 import FeaturedWorks from '../components/FeaturedWorks/FeaturedWorks';
 import CallToAction from '../components/CallToAction/CallToAction';
+import MediaPublications from '../components/MediaPublications/MediaPublications';
+import Contacts from '../components/Contacts/Contacts';
 import styles from "./page.module.css";
 import { Metadata } from 'next';
 
@@ -18,6 +20,8 @@ export default function Home() {
       <AboutPreview />
       <FeaturedWorks />
       <CallToAction />
+      <MediaPublications />
+      <Contacts />
     </main>
   );
 }

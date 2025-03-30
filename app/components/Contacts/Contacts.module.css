@@ -1,0 +1,541 @@
+.contacts {
+  padding: 8rem 2rem;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.contacts::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #1a1a1a;
+  font-family: 'Nunito', sans-serif;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.contactItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 119, 255, 0.03) 0%, rgba(0, 119, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.contactItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.contactItem:hover::before {
+  opacity: 1;
+}
+
+.contactItem:active {
+  transform: translateY(-2px);
+}
+
+.contactItem:last-child {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  border: 1px solid rgba(0, 119, 255, 0.1);
+  cursor: default;
+  pointer-events: none;
+  transform: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.contactItem:last-child:hover {
+  transform: none !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.contactItem:last-child:hover::before {
+  opacity: 0;
+}
+
+.contactItem:last-child .messengers {
+  pointer-events: auto;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: #0077FF;
+  flex-shrink: 0;
+  background: #f0f7ff;
+  padding: 8px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.contactItem:hover .icon {
+  transform: scale(1.1);
+  background: #0077FF;
+  color: white;
+}
+
+.contactText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.contactLabel {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.contactValue {
+  font-size: 1.1rem;
+  color: #4a5568;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+}
+
+.messengers {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.messengerLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: white;
+  color: #0077FF;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.1);
+  border: 1px solid rgba(0, 119, 255, 0.1);
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.messengerLink[title="Telegram"]:hover {
+  background: #0088cc;
+  color: white;
+  transform: translateY(-3px) rotate(5deg);
+  box-shadow: 0 12px 24px rgba(0, 136, 204, 0.2);
+}
+
+.messengerLink[title="WhatsApp"]:hover {
+  background: #25D366;
+  color: white;
+  transform: translateY(-3px) rotate(5deg);
+  box-shadow: 0 12px 24px rgba(37, 211, 102, 0.2);
+}
+
+.messengerLink:active {
+  transform: translateY(-1px) rotate(2deg);
+}
+
+.form {
+  background: white;
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.formTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+  font-family: 'Nunito', sans-serif;
+}
+
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4a5568;
+  font-family: 'Nunito', sans-serif;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.3s ease;
+  color: black;
+  background: #f8f9fa;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #0077FF;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(0, 119, 255, 0.1);
+}
+
+.textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1.2rem;
+  background: linear-gradient(135deg, #0077FF 0%, #0056b3 100%);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.submitButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 119, 255, 0.2);
+}
+
+.submitButton:hover::before {
+  transform: translateX(100%);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contacts {
+    padding: 7rem 2rem;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  .content {
+    gap: 4rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .form {
+    padding: 3rem;
+  }
+
+  .formTitle {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contactItem {
+    padding: 2.5rem;
+  }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+  }
+
+  .contactLabel {
+    font-size: 1.3rem;
+  }
+
+  .contactValue {
+    font-size: 1.15rem;
+  }
+
+  .messengerLink {
+    width: 58px;
+    height: 58px;
+    font-size: 1.6rem;
+  }
+
+  .input,
+  .textarea {
+    padding: 1.2rem 1.4rem;
+    font-size: 1.1rem;
+  }
+
+  .submitButton {
+    padding: 1.4rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .contacts {
+    padding: 6rem 1.5rem;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .form {
+    padding: 2.5rem;
+  }
+
+  .formTitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .contactItem {
+    padding: 2rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+  }
+
+  .contactLabel {
+    font-size: 1.2rem;
+  }
+
+  .contactValue {
+    font-size: 1.1rem;
+  }
+
+  .messengerLink {
+    width: 54px;
+    height: 54px;
+    font-size: 1.5rem;
+  }
+
+  .input,
+  .textarea {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .submitButton {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 5rem 1rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .form {
+    padding: 2rem;
+  }
+
+  .formTitle {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .contactItem {
+    padding: 1.8rem;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+    padding: 7px;
+  }
+
+  .contactLabel {
+    font-size: 1.15rem;
+  }
+
+  .contactValue {
+    font-size: 1rem;
+  }
+
+  .messengerLink {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+
+  .input,
+  .textarea {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .submitButton {
+    padding: 1.1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    padding: 4rem 0.8rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 0.8rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+
+  .formTitle {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contactItem {
+    padding: 1.5rem;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+  }
+
+  .contactLabel {
+    font-size: 1.1rem;
+  }
+
+  .contactValue {
+    font-size: 0.95rem;
+  }
+
+  .messengerLink {
+    width: 46px;
+    height: 46px;
+    font-size: 1.3rem;
+  }
+
+  .input,
+  .textarea {
+    padding: 0.8rem 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .submitButton {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+} 

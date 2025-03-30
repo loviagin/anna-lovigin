@@ -1,8 +1,7 @@
-import Hero from './components/Hero/Hero';
-import AboutPreview from './components/AboutPreview/AboutPreview';
-import FeaturedWorks from './components/FeaturedWorks/FeaturedWorks';
-import Testimonials from './components/Testimonials/Testimonials';
-import CallToAction from './components/CallToAction/CallToAction';
+import Hero from '../components/Hero/Hero';
+import AboutPreview from '../components/AboutPreview/AboutPreview';
+import FeaturedWorks from '../components/FeaturedWorks/FeaturedWorks';
+import CallToAction from '../components/CallToAction/CallToAction';
 import styles from "./page.module.css";
 import { Metadata } from 'next';
 
@@ -19,7 +18,6 @@ export default function Home() {
       <AboutPreview />
       <FeaturedWorks />
       <CallToAction />
-      {/* <Testimonials /> */}
     </main>
   );
 }

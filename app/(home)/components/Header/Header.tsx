@@ -27,9 +27,9 @@ export default function Header() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          Анна Ловягина
+          <a href='/'>Анна Ловягина</a>
         </div>
-        <button 
+        <button
           className={`${styles.mobileMenuButton} ${isMobileMenuOpen ? styles.active : ''}`}
           onClick={toggleMobileMenu}
           aria-label="Открыть меню"

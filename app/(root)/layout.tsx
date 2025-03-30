@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import "./globals.css";
+import Footer from "../components/Footer/Footer";
+import "../globals.css";
 import Script from "next/script";
 
 const nunito = Nunito({

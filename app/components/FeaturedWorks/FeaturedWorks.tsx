@@ -18,7 +18,7 @@ const featuredWorks: Artwork[] = [
     id: 1,
     title: "Вечерний Сочи",
     imageUrl: "/artworks/27.webp",
-    year: "2024",
+    year: "2022",
     technique: "Холст, масло",
     price: "По запросу",
     size: "50x70 см"
@@ -27,7 +27,7 @@ const featuredWorks: Artwork[] = [
     id: 2,
     title: "Красная яхта",
     imageUrl: "/artworks/28.webp",
-    year: "2024",
+    year: "2022",
     technique: "Холст, масло",
     price: "По запросу",
     size: "50x70 см"
@@ -36,7 +36,7 @@ const featuredWorks: Artwork[] = [
     id: 3,
     title: "Зимнее солнце",
     imageUrl: "/artworks/1.webp",
-    year: "2023",
+    year: "2025",
     technique: "Холст, масло",
     price: "По запросу",
     size: "50x70 см"

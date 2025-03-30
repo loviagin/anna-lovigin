@@ -16,30 +16,30 @@ interface Artwork {
 const featuredWorks: Artwork[] = [
   {
     id: 1,
-    title: "Шут",
-    imageUrl: "/artworks/19.webp",
+    title: "Вечерний Сочи",
+    imageUrl: "/artworks/27.webp",
     year: "2024",
     technique: "Холст, масло",
     price: "По запросу",
-    size: "25x20 см"
+    size: "50x70 см"
   },
   {
     id: 2,
-    title: "Котята",
-    imageUrl: "/artworks/20.webp",
+    title: "Красная яхта",
+    imageUrl: "/artworks/28.webp",
     year: "2024",
     technique: "Холст, масло",
     price: "По запросу",
-    size: "30x30 см"
+    size: "50x70 см"
   },
   {
     id: 3,
-    title: "Мимоза",
-    imageUrl: "/artworks/21.webp",
+    title: "Зимнее солнце",
+    imageUrl: "/artworks/1.webp",
     year: "2023",
-    technique: "Холст на подрамнике, масло",
+    technique: "Холст, масло",
     price: "По запросу",
-    size: "40x30 см"
+    size: "50x70 см"
   }
 ];
 

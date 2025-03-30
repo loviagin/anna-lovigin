@@ -29,6 +29,17 @@ const artworks: Artwork[] = [
   { id: 16, title: 'Работа 16', imageUrl: '/artworks/16.webp' },
   { id: 17, title: 'Работа 17', imageUrl: '/artworks/17.webp' },
   { id: 18, title: 'Работа 18', imageUrl: '/artworks/18.webp' },
+  { id: 19, title: 'Работа 18', imageUrl: '/artworks/19.webp' },
+  { id: 20, title: 'Работа 18', imageUrl: '/artworks/20.webp' },
+  { id: 21, title: 'Работа 18', imageUrl: '/artworks/21.webp' },
+  { id: 22, title: 'Работа 18', imageUrl: '/artworks/22.webp' },
+  { id: 23, title: 'Работа 18', imageUrl: '/artworks/23.webp' },
+  { id: 24, title: 'Работа 18', imageUrl: '/artworks/24.webp' },
+  { id: 25, title: 'Работа 18', imageUrl: '/artworks/25.webp' },
+  { id: 26, title: 'Работа 18', imageUrl: '/artworks/26.webp' },
+  { id: 27, title: 'Работа 18', imageUrl: '/artworks/27.webp' },
+  { id: 28, title: 'Работа 18', imageUrl: '/artworks/28.webp' },
+  { id: 29, title: 'Работа 18', imageUrl: '/artworks/29.webp' },
 ];
 
 // Дублируем массив для бесконечной прокрутки

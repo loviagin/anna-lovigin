@@ -138,12 +138,12 @@ export default function Hero() {
     setPosition(newPosition);
   }, [isDragging, startX, dragStartPosition, slideWidth, slideGap]);
 
-  const handleMouseUp = () => {
+  const handleMouseUp = useCallback(() => {
     setIsDragging(false);
     if (!isHovered) {
       setIsHovered(false);
     }
-  };
+  }, [isHovered]);
 
   useEffect(() => {
     // Добавляем обработчики для всего документа, чтобы отслеживать перетаскивание за пределами слайдера

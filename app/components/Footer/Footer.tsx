@@ -33,7 +33,7 @@ export default function Footer() {
           <p className={styles.copyright}>© 2025 Анна Ловягина. Все права защищены.</p>
           <div className={styles.legal}>
             <a href="/privacy-policy" className={styles.legalLink}>Политика конфиденциальности</a>
-            {/* <a href="/terms" className={styles.legalLink}>Пользовательское соглашение</a> */}
+            <a href="/terms" className={styles.legalLink}>Пользовательское соглашение</a>
           </div>
         </div>
       </div>

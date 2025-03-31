@@ -13,7 +13,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   authors: [{ name: "LOVIGIN LTD", url: "https://lovigin.com" }],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.jpg",
   },
 };
 

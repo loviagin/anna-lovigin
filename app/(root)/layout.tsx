@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description: "Профессиональный художник, создающий искусство, которое трогает душу. Ее работы отличаются глубоким эмоциональным содержанием и уникальным художественным видением.",
   authors: [{ name: "LOVIGIN LTD", url: "https://lovigin.com" }],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.jpg",
   },
 };
 

@@ -8,6 +8,12 @@
   padding-top: 100px;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
 .title {
   font-size: 3rem;
   font-weight: 800;
@@ -15,12 +21,6 @@
   margin-bottom: 3rem;
   color: #333;
   font-family: 'Nunito', sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 2rem;
 }
 
 .subtitle {

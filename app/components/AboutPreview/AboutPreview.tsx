@@ -1,4 +1,5 @@
 import styles from './AboutPreview.module.css';
+import Image from 'next/image';
 
 export default function AboutPreview() {
   return (
@@ -12,9 +13,11 @@ export default function AboutPreview() {
           {/* <button className={styles.button}>Подробнее о художнике</button> */}
         </div>
         <div className={styles.imageWrapper}>
-          <img 
+          <Image 
             src="/me.webp" 
             alt="Анна Ловягина" 
+            width={500}
+            height={600}
             className={styles.portrait}
           />
         </div>

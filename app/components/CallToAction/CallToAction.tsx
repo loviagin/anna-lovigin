@@ -12,7 +12,7 @@ export default function CallToAction() {
       <div className={styles.container}>
         <div className={styles.quote}>
           <p className={styles.quoteText}>
-          "Искусство смывает пыль повседневности с души."
+            &ldquo;Искусство смывает пыль повседневности с души.&rdquo;
           </p>
           <p className={styles.quoteAuthor}>- Пабло Пикассо</p>
         </div>

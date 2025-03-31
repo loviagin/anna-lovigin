@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './FeaturedWorks.module.css';
+import Image from 'next/image';
 
 interface Artwork {
   id: number;
@@ -59,9 +60,11 @@ export default function FeaturedWorks() {
               onMouseLeave={() => setHoveredId(null)}
             >
               <div className={styles.imageWrapper}>
-                <img 
+                <Image 
                   src={work.imageUrl} 
                   alt={work.title}
+                  width={400}
+                  height={500}
                   className={styles.image}
                 />
                 <div className={`${styles.overlay} ${hoveredId === work.id ? styles.visible : ''}`} />

@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './Hero.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Artwork {
   id: number;
@@ -120,7 +121,7 @@ export default function Hero() {
     setDragStartPosition(position);
   };
 
-  const handleMouseMove = (e: React.MouseEvent) => {
+  const handleMouseMove = useCallback((e: MouseEvent) => {
     if (!isDragging) return;
 
     const deltaX = e.clientX - startX;
@@ -135,7 +136,7 @@ export default function Hero() {
     }
 
     setPosition(newPosition);
-  };
+  }, [isDragging, startX, dragStartPosition, slideWidth, slideGap]);
 
   const handleMouseUp = () => {
     setIsDragging(false);
@@ -147,15 +148,15 @@ export default function Hero() {
   useEffect(() => {
     // Добавляем обработчики для всего документа, чтобы отслеживать перетаскивание за пределами слайдера
     if (isDragging) {
-      document.addEventListener('mousemove', handleMouseMove as any);
+      document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', handleMouseUp);
     }
 
     return () => {
-      document.removeEventListener('mousemove', handleMouseMove as any);
+      document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
     };
-  }, [isDragging]);
+  }, [isDragging, handleMouseMove, handleMouseUp]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setIsDragging(true);
@@ -223,9 +224,11 @@ export default function Hero() {
                 marginRight: `${slideGap}px`
               }}
             >
-              <img 
+              <Image 
                 src={artwork.imageUrl} 
                 alt={artwork.title}
+                width={slideWidth}
+                height={slideWidth * 1.5}
                 draggable={false}
               />
             </div>

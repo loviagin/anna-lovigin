@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -27,7 +28,7 @@ export default function Header() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <a href='/'>Анна Ловягина</a>
+          <Link href='/'>Анна Ловягина</Link>
         </div>
         <button
           className={`${styles.mobileMenuButton} ${isMobileMenuOpen ? styles.active : ''}`}
@@ -39,11 +40,11 @@ export default function Header() {
           <span></span>
         </button>
         <nav className={`${styles.nav} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
-          <a href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}>Главная</a>
-          <a href="/#about" className={`${styles.navLink} ${pathname === '/#about' ? styles.active : ''}`}>О художнике</a>
-          <a href="/#featured" className={`${styles.navLink} ${pathname === '/#featured' ? styles.active : ''}`}>Галерея</a>
-          <a href="/#publications" className={`${styles.navLink} ${pathname === '/#publications' ? styles.active : ''}`}>СМИ</a>
-          <a href="/#contacts" className={`${styles.navLink} ${pathname === '/#contacts' ? styles.active : ''}`}>Контакты</a>
+          <Link href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}>Главная</Link>
+          <Link href="/#about" className={`${styles.navLink} ${pathname === '/#about' ? styles.active : ''}`}>О художнике</Link>
+          <Link href="/#featured" className={`${styles.navLink} ${pathname === '/#featured' ? styles.active : ''}`}>Галерея</Link>
+          <Link href="/#publications" className={`${styles.navLink} ${pathname === '/#publications' ? styles.active : ''}`}>СМИ</Link>
+          <Link href="/#contacts" className={`${styles.navLink} ${pathname === '/#contacts' ? styles.active : ''}`}>Контакты</Link>
         </nav>
       </div>
     </header>

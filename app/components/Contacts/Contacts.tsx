@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './Contacts.module.css';
-import { FaEnvelope, FaPhone, FaTelegram, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaTelegram, FaVk, FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 
 export default function Contacts() {
@@ -63,34 +63,34 @@ export default function Contacts() {
                 <span className={styles.contactValue}>anna@lovigin.com</span>
               </div>
             </a>
-            <a href="tel:+79883596434" className={styles.contactItem}>
-              <FaPhone className={styles.icon} />
+            <a href="https://t.me/annalovyagina69" target="_blank" rel="noopener noreferrer" className={styles.contactItem}>
+              <FaTelegram className={styles.icon} />
               <div className={styles.contactText}>
-                <span className={styles.contactLabel}>Телефон</span>
-                <span className={styles.contactValue}>+7 (988) 359-64-34</span>
+                <span className={styles.contactLabel}>Телеграм</span>
+                <span className={styles.contactValue}>@annalovyagina69</span>
               </div>
             </a>
             <div className={styles.contactItem}>
               <div className={styles.contactText}>
-                <span className={styles.contactLabel}>Мессенджеры</span>
+                <span className={styles.contactLabel}>Соц. сети</span>
                 <div className={styles.messengers}>
                   <a 
-                    href="https://t.me/annalovyagina69" 
+                    href="https://vk.com/annles" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className={styles.messengerLink} 
+                    title="Vk"
+                  >
+                    <FaVk />
+                  </a>
+                  <a 
+                    href="https://t.me/annaloviagina" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className={styles.messengerLink} 
                     title="Telegram"
                   >
                     <FaTelegram />
-                  </a>
-                  <a 
-                    href="https://wa.me/79883596434" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className={styles.messengerLink} 
-                    title="WhatsApp"
-                  >
-                    <FaWhatsapp />
                   </a>
                 </div>
               </div>

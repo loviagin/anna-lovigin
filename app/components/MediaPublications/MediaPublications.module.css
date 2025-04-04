@@ -130,6 +130,10 @@
 }
 
 @media (max-width: 1200px) {
+  .publications {
+    padding: 5rem 0;
+  }
+
   .container {
     padding: 0 1.5rem;
   }
@@ -137,9 +141,13 @@
 
 @media (max-width: 1024px) {
   .publications {
-    padding: 5rem 1.5rem;
+    padding: 3rem 0;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+  
   .title {
     font-size: 2.2rem;
     margin-bottom: 2.5rem;
@@ -274,4 +282,4 @@
   .description {
     font-size: 0.9rem;
   }
-} 
+}

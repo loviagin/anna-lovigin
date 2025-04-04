@@ -42,7 +42,7 @@ export default function CallToAction() {
               <FaTelegram className={styles.icon} />
               Telegram
             </a>
-            <a 
+            {/* <a 
               href="https://www.instagram.com/annaloviagina/" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function CallToAction() {
             >
               <FaInstagram className={styles.icon} />
               Instagram
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

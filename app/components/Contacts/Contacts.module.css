@@ -172,15 +172,15 @@
   z-index: 2;
 }
 
-.messengerLink[title="Telegram"]:hover {
+.messengerLink[title="Vk"]:hover {
   background: #0088cc;
   color: white;
   transform: translateY(-3px) rotate(5deg);
   box-shadow: 0 12px 24px rgba(0, 136, 204, 0.2);
 }
 
-.messengerLink[title="WhatsApp"]:hover {
-  background: #25D366;
+.messengerLink[title="Telegram"]:hover {
+  background: #2300be;
   color: white;
   transform: translateY(-3px) rotate(5deg);
   box-shadow: 0 12px 24px rgba(37, 211, 102, 0.2);
@@ -281,23 +281,15 @@
   transform: translateX(100%);
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-}
-
 @media (max-width: 1024px) {
   .contacts {
-    padding: 7rem 2rem;
+    padding: 5rem 0;
   }
 
   .container {
     width: 100%;
     max-width: 100%;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 
   .content {
@@ -356,13 +348,13 @@
 
 @media (max-width: 900px) {
   .contacts {
-    padding: 6rem 1.5rem;
+    padding: 3rem 0;
   }
 
   .container {
     width: 100%;
     max-width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
 
   .content {
@@ -421,13 +413,8 @@
 }
 
 @media (max-width: 768px) {
-  .contacts {
-    padding: 5rem 1rem;
-  }
-
   .container {
     width: 100%;
-    padding: 0 1rem;
   }
 
   .title {
@@ -481,13 +468,9 @@
 }
 
 @media (max-width: 480px) {
-  .contacts {
-    padding: 4rem 0.8rem;
-  }
 
   .container {
     width: 100%;
-    padding: 0 0.8rem;
   }
 
   .title {

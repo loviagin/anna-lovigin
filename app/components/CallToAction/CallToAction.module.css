@@ -212,10 +212,14 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .callToAction {
+    padding: 5rem 0;
+  }
+
   .container {
     grid-template-columns: 1fr;
     gap: 40px;
-    padding: 0 40px;
+    padding: 0 1.5rem;
   }
 
   .quote {
@@ -258,13 +262,13 @@
 
 @media (max-width: 768px) {
   .callToAction {
-    padding: 4rem 1rem;
+    padding: 3rem 0;
   }
 
   .container {
     grid-template-columns: 1fr;
     gap: 30px;
-    padding: 0 15px;
+    padding: 0 1rem;
   }
 
   .quote {

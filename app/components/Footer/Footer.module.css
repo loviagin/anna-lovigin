@@ -74,6 +74,13 @@
   font-size: 0.875rem;
 }
 
+.disclaimer {
+  padding-top: 1rem;
+  color: #666;
+  font-size: 0.8rem;
+  text-align: start;
+}
+
 .legal {
   display: flex;
   gap: 2rem;
@@ -109,5 +116,9 @@
   .legal {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .disclaimer {
+    text-align: center;
   }
 } 

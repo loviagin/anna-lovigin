@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './Contacts.module.css';
-import { FaEnvelope, FaPhone, FaTelegram, FaVk, FaWhatsapp } from 'react-icons/fa';
+import { FaEnvelope, FaTelegram, FaVk } from 'react-icons/fa';
 import { useState } from 'react';
 
 export default function Contacts() {

@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './CallToAction.module.css';
-import { FaVk, FaTelegram, FaInstagram } from 'react-icons/fa';
+import { FaVk, FaTelegram } from 'react-icons/fa';
 
 export default function CallToAction() {
   return (

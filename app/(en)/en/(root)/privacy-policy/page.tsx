@@ -15,13 +15,13 @@ const PrivacyPolicy = () => {
         <section className={styles.section}>
           <h3 className={styles.sectionTitle}>1. General provisions</h3>
           <p className={styles.text}>
-            This privacy policy is prepared in accordance with the requirements of the Federal Law of July 27, 2006 No. 152-FZ "On personal data" (hereinafter - the Personal Data Law) and defines the order of processing personal data and measures to ensure the security of personal data, undertaken by Anna Loviagina (hereinafter - the Operator).
+            This privacy policy is prepared in accordance with the requirements of the Federal Law of July 27, 2006 No. 152-FZ &quot;On personal data&quot; (hereinafter - the Personal Data Law) and defines the order of processing personal data and measures to ensure the security of personal data, undertaken by Anna Loviagina (hereinafter - the Operator).
           </p>
           <p className={styles.text}>
             1.1. The Operator sets as its main goal and condition for the implementation of its activities the observance of the rights and freedoms of a person and a citizen in the processing of his personal data, including the protection of the rights to privacy, personal and family secrets.
           </p>
           <p className={styles.text}>
-            1.2. This Operator's policy on the processing of personal data (hereinafter - Policy) applies to all information that the Operator can obtain about visitors to the website https://annaloviagina.art.
+            1.2. This Operator&apos;s policy on the processing of personal data (hereinafter - Policy) applies to all information that the Operator can obtain about visitors to the website https://annaloviagina.art.
           </p>
         </section>
         
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
           </div>
           
           <p className={styles.text}>
-            4.3. Individuals who have provided the Operator with inaccurate information about themselves or information about another subject of personal data without the latter's consent, are responsible in accordance with the legislation of the Russian Federation.
+            4.3. Individuals who have provided the Operator with inaccurate information about themselves or information about another subject of personal data without the latter&apos;s consent, are responsible in accordance with the legislation of the Russian Federation.
           </p>
         </section>
         
@@ -158,7 +158,7 @@ const PrivacyPolicy = () => {
               
               <div>
                 <h4 className={styles.sectionSubtitle}>Legal basis</h4>
-                <p className={styles.text}>Federal Law "On information, information technologies and on the protection of information" of July 27, 2006 No. 149-FZ</p>
+                <p className={styles.text}>Federal Law &quot;On information, information technologies and on the protection of information&quot; of July 27, 2006 No. 149-FZ</p>
               </div>
               
               <div>

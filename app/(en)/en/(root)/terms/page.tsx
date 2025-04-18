@@ -56,7 +56,7 @@ const Terms = () => {
 
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>5. Limitation of liability</h2>
-            <p className={styles.paragraph}>The content of the website is provided "as is", without any guarantees. The Administrator does not guarantee the accuracy, completeness or timeliness of the information provided.</p>
+            <p className={styles.paragraph}>The content of the website is provided &quot;as is&quot;, without any guarantees. The Administrator does not guarantee the accuracy, completeness or timeliness of the information provided.</p>
           </section>
 
           <section className={styles.section}>

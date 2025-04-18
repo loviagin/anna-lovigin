@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@react-email/components": "^0.0.34",
+    "@types/mongodb": "^4.0.6",
+    "mongodb": "^6.15.0",
     "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

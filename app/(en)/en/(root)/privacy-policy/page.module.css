@@ -1,0 +1,231 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  background-color: white;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+  font-family: 'Nunito', sans-serif;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #333;
+  font-family: 'Nunito', sans-serif;
+}
+
+.section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: 'Nunito', sans-serif;
+}
+
+.sectionSubtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #444;
+  font-family: 'Nunito', sans-serif;
+}
+
+.text {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  color: #666;
+  font-size: 1.1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.listItem {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding-left: 1.5rem;
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+}
+
+.listItem::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.link {
+  color: #0077FF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-family: 'Nunito', sans-serif;
+}
+
+.link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.infoBox {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.contactBox {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-top: 3rem;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.contactText {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 60px;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .section {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .listItem {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contactBox {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.2rem;
+  }
+
+  .text, .listItem {
+    font-size: 0.95rem;
+  }
+
+  .contactBox {
+    padding: 1.2rem;
+  }
+} 
